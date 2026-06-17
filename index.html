@@ -1,74 +1,361 @@
-<html>
-    <head>
-    <meta charset="utf-8">
-    <title>My mini website</title>
-    <link rel="stylesheet" href="./style.css">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARADIME | 마술 도구 제작 스튜디오</title>
+    <meta name="description" content="PARADIME은 존재하지 않았던 새로운 패러다임의 마술 도구와 기믹을 만드는 제작 스튜디오입니다.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    </head>
-    <body>
+    <div class="noise-overlay"></div>
+
     <nav>
+        <div class="logo">
+            <span class="hover-effect">P</span><span class="hover-effect">A</span><span class="hover-effect">R</span><span class="hover-effect">A</span><span class="hover-effect">D</span><span class="hover-effect">I</span><span class="hover-effect">M</span><span class="hover-effect">E</span>
+        </div>
+        <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         <ul>
-            <li> <a href="#Hobby">My Hobbies</a></li>
-            <li> <a href="#photo">My Favorite Photos</a></li>
-            <li> <a href="#video">My Favorite video</a></li>
-            <li> <a href="#place">My Favorite places</a></li>
-        </ul>    
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Portfolio">Product</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">inquiry</a></li>
+        </ul>
     </nav>
 
-    <header>
-        <h1>My mini website</h1>
-        <p>welcome to my simple website</p>
-        <p>I am a student majoring mutimedia</p>
+    <header id="Home" class="hero">
+        <div class="hero-bg" role="img" aria-label="어두운 무대 위 스포트라이트와 카드가 흩어지는 배경"></div>
+        <div class="hero-vignette"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">PARADIGM OF MAGIC</p>
+            <h1 class="hero-title">PARADIME<br><span class="accent">MAGIC</span></h1>
+            <p class="hero-subtitle">마술의 새로운 기준. 패러다임을 바꿉니다.</p>
+            <p class="hero-desc">누구나 생각할 수 있는 트릭은 취급하지 않습니다.<br>존재하지 않았던 새로운 패러다임의 마술 도구를 만나보세요.</p>
+            <a href="#Portfolio" class="hero-cta"> 도구&카드 구경하기</a>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span></span>
+            <p>SCROLL</p>
+        </div>
     </header>
-    <section>
-        <article>
-        <h2>My Favorite Things</h2>
-        <ul>
-            <li>game</li>
-            <li>chiken</li>
-            <li>webtoon</li>
-        </ul>
-        </article>
-        
-        <article>
-        <h2 id="Hobby">My Hobbies</h2>
-        <ol>
-            <li>Watch drama</li>
-            <li>playing game</li>
-            <li>read webtoon</li>
-        </ol>
-     </article>
 
-      <article>
-        <h2 id=""photo>My Favorite Photos</h2>
-        <img src="image/dog.jpg" width = "300" art = "dog photo">
-     </article>
-     
-     <article>
-        <h2>MY Favorite websites</h2>
-        <p><a href="https://www.google.com/" target="_blank" style="color:black">Google</a></p>
-        <p><a href="https://www.naver.com/" target="blank" style="color:black">naver</a> </p>
-        <p> <a href="page2.html" terget="_blank" style="color:black"> 두번째 페이지로 바로가기 </a></p>
-        <p><a href="https://www.youtube.com/" target="_blank" style="color:black">youtube</a></p>
-        <p><a href="https://www.netflix.com/browse" target="_blank" style="color:black">netflix</a></p>
-    </article>
-
-     <article>
-        <h2 id="video"> My Favorite video</h2>
-        <p>This is one of the videos I enjoy watching</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z0ogZcmPRnA?si=KVkB-qub0vTWpGW_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     </article>
-
-     <article>
-        <h2 id="place"> My Favorite places</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.235869440514!2d128.89860257597255!3d35.250387372729456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568b8acfc25b357%3A0xc3d01c491a811dee!2z7J247KCc64yA7ZWZ6rWQIOq5gO2VtOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1774403695449!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </article>
+    <section id="About" class="slogan-section">
+        <p class="section-eyebrow">PHILOSOPHY</p>
+        <h2>기획은 치밀하게,<br>연출은 감각적으로,<br>비밀은 완벽하게.</h2>
+        <p class="slogan-desc">PARADIME은 당신의 마술을 '예술 작품'으로 만듭니다.</p>
     </section>
-    <footer>    
-        <h4> Contact Information</h4>
-        <p>Email: <a href="mailto:gimj96526@gmail.com">gimj96526@gmail.com</a></p>
-        <p>phone: <a href="tel:010-1234-1234"> 010-1234-1234</a></p>
-        <p><a href="page2.html" target="blank">상담문의</a></p>
-    </footer>    
-    </body>
+
+    <section id="Portfolio" class="portfolio-section">
+        <p class="section-eyebrow center">BEST</p>
+        <h2 class="section-title">Product</h2>
+
+        <div class="portfolio-grid">
+            <article class="portfolio-card" data-product="mystic" tabindex="0" role="button" aria-label="미스틱 화이트&블랙 상세보기">
+                <div class="portfolio-thumb">
+                    <span class="thumb-placeholder"><img src="https://fmbge14b5pze8zo7.public.blob.vercel-storage.com/thumbnails/Gemini_Generated_Image_hdtiqrhdtiqrhdti.png" width="500" height="500" alt="미스틱 화이트&블랙"></span>
+                    <span class="portfolio-tag">플레잉 카드</span>
+                    <span class="card-view-hint">자세히 보기 →</span>
+                </div>
+                <div class="portfolio-info">
+                    <p class="date">역사와 전통의 디자인 덱 미스틱</p>
+                    <h3>미스틱 화이트&블랙</h3>
+                </div>
+            </article>
+
+            <article class="portfolio-card" data-product="nextbox" tabindex="0" role="button" aria-label="넥스트 박스 상세보기">
+                <div class="portfolio-thumb">
+                    <span class="thumb-placeholder"><img src="https://fmbge14b5pze8zo7.public.blob.vercel-storage.com/thumbnails/%EB%B0%95%EC%8A%A4.png" width="680" alt="넥스트 박스"></span>
+                    <span class="portfolio-tag">도구</span>
+                    <span class="card-view-hint">자세히 보기 →</span>
+                </div>
+                <div class="portfolio-info">
+                    <p class="date">2021년 올해의 도구 수상작</p>
+                    <h3>넥스트 박스</h3>
+                </div>
+            </article>
+
+            <article class="portfolio-card" data-product="warplink" tabindex="0" role="button" aria-label="워프 링크 상세보기">
+                <div class="portfolio-thumb">
+                    <span class="thumb-placeholder"><img src="https://fmbge14b5pze8zo7.public.blob.vercel-storage.com/thumbnails/%EC%9B%8C%ED%94%84%EB%A7%81%ED%81%AC.png" width="600" alt="워프 링크"></span>
+                    <span class="portfolio-tag">마술 렉처</span>
+                    <span class="card-view-hint">자세히 보기 →</span>
+                </div>
+                <div class="portfolio-info">
+                    <p class="date">순간이동 마술의 혁신</p>
+                    <h3>워프 링크</h3>
+                </div>
+            </article>
+
+            <article class="portfolio-card" data-product="shift" tabindex="0" role="button" aria-label="시프트 상세보기">
+                <div class="portfolio-thumb">
+                    <span class="thumb-placeholder"><img src="https://fmbge14b5pze8zo7.public.blob.vercel-storage.com/thumbnails/%EC%8B%9C%ED%94%84%ED%8A%B8.png" width="750" alt="시프트"></span>
+                    <span class="portfolio-tag">마술 도구</span>
+                    <span class="card-view-hint">자세히 보기 →</span>
+                </div>
+                <div class="portfolio-info">
+                    <p class="date">관객의 카드가 원하는 곳에서 나오는</p>
+                    <h3>시프트</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="Services" class="services-section">
+        <p class="section-eyebrow center">Services</p>
+        <h2 class="section-title">이런 분야, 저희가 다룹니다!</h2>
+        <div class="tags">
+            <span>Card Magic</span>
+            <span>Design Card</span>
+            <span>lecture</span>
+            <span>Book</span>
+            <span>Online Lecture</span>
+            <span>directing magic</span>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <p class="cta-text">PARADIME과 함께<br>당신의 마술을 현실로 만들어보세요.</p>
+        <a href="#Contact" class="hero-cta outline">문의하기</a>
+    </section>
+
+    <section id="Contact" class="contact-section">
+        <p class="section-eyebrow center">문 의 하 기</p>
+        <h2 class="section-title">제품 문의</h2>
+        <p class="contact-lead">제품에 문제가 있거나 구매 제품에 대해 궁금한 점을 보내주시면 답변드립니다.</p>
+
+        <div class="contact-form-wrap">
+            <div class="form-row-two">
+                <div class="form-group">
+                    <label for="cf-name">이 름</label>
+                    <input type="text" id="cf-name" placeholder="이름을 입력하세요">
+                </div>
+                <div class="form-group">
+                    <label for="cf-email">이 메 일</label>
+                    <input type="email" id="cf-email" placeholder="example@email.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cf-model">관 심 모 델</label>
+                <div class="select-wrap">
+                    <select id="cf-model">
+                        <option value="" disabled selected>선택하세요</option>
+                        <option>미스틱 화이트&amp;블랙</option>
+                        <option>넥스트 박스</option>
+                        <option>워프 링크</option>
+                        <option>체인지 시프트</option>
+                        <option>기타</option>
+                    </select>
+                    <span class="select-arrow">&#8964;</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cf-message">문 의 내 용</label>
+                <textarea id="cf-message" rows="6" placeholder="궁금한 점을 자유롭게 남겨주세요"></textarea>
+            </div>
+            <button class="form-submit" type="button">문의 보내기</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">PARADIME</div>
+        <p>2026 © PARADIME. All rights reserved.</p>
+    </footer>
+
+
+    <div class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container">
+            <button class="modal-close" aria-label="닫기">
+                <span></span><span></span>
+            </button>
+
+            <div class="modal-inner">
+                <div class="modal-media">
+                    <div class="modal-img-wrap">
+                        <img src="" alt="" id="modalImg">
+                    </div>
+                    <div class="modal-badges">
+                        <span class="modal-tag" id="modalTag"></span>
+                        <span class="modal-badge" id="modalBadge"></span>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <p class="modal-eyebrow" id="modalEyebrow"></p>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-desc" id="modalDesc"></p>
+
+                    <ul class="modal-specs" id="modalSpecs"></ul>
+
+                    <div class="modal-actions">
+                        <a href="#Contact" class="hero-cta modal-cta-primary">구매 문의하기</a>
+                        <button class="hero-cta outline modal-cta-secondary">찜하기 ♡</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelector('nav ul');
+
+        toggle.addEventListener('click', () => {
+            const isOpen = navList.classList.toggle('open');
+            toggle.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navList.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('open');
+                toggle.classList.remove('open');
+                toggle.setAttribute('aria-expanded', false);
+            });
+        });
+
+        
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        
+        const revealEls = document.querySelectorAll(
+            '.slogan-section, .portfolio-card, .services-section .tags span, .cta-section, .contact-row'
+        );
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => { el.classList.add('reveal'); observer.observe(el); });
+
+        
+        const products = {
+            mystic: {
+                tag: '플레잉 카드',
+                badge: 'BEST SELLER',
+                eyebrow: '역사와 전통의 디자인 덱',
+                title: '미스틱 화이트 & 블랙',
+                img: 'https://fmbge14b5pze8zo7.public.blob.vercel-storage.com/thumbnails/Gemini_Generated_Image_hdtiqrhdtiqrhdti.png',
+                desc: '신비로운 크리스탈과 손의 문양을 담은 MYSTIC 덱. 화이트와 블랙 두 가지 버전으로 출시된 이 덱은 클래식한 아름다움과 현대적인 감각을 동시에 담아냈습니다. 팬 핸들링부터 카드 매직까지, 어떤 연출에도 완벽하게 어울립니다.',
+                specs: [
+                    { label: '카드 매수', value: '54장 (조커 2장 포함)' },
+                    { label: '용지', value: 'Air Cushion Finish 코팅' },
+                    { label: '제조사', value: 'USPCC (미국 카드 인쇄회사)' },
+                    { label: '구성', value: '화이트 & 블랙 세트 or 단품' },
+                    { label: '특징', value: '커스텀 패턴 조커, 전용 케이스 포함' },
+                ]
+            },
+            nextbox: {
+                tag: '도구',
+                badge: '2021 올해의 도구',
+                eyebrow: '2021년 올해의 도구 수상작',
+                title: '넥스트 박스',
+                img: 'https://fmbge14b5pze8zo7.public.blob.vercel-storage.com/thumbnails/%EB%B0%95%EC%8A%A4.png',
+                desc: '카드가 닫힌 박스를 통과하는 불가능한 현상. NEXT BOX는 관객이 선택한 카드가 밀봉된 박스 안에서 발견되는 마술 도구입니다. 2021년 마술 업계 올해의 도구로 선정되며 전 세계 마술사들의 주목을 받았습니다.',
+                specs: [
+                    { label: '난이도', value: '중급 (별도 기술 불필요)' },
+                    { label: '리셋 시간', value: '10초 이내' },
+                    { label: '재질', value: '항공기급 알루미늄 + 가죽 케이스' },
+                    { label: '호환 카드', value: '표준 포커 사이즈 전용' },
+                    { label: '포함', value: '도구 본체 + 전용 케이스 + 렉처 영상' },
+                ]
+            },
+            warplink: {
+                tag: '마술 렉처',
+                badge: 'NEW',
+                eyebrow: '순간이동 마술의 혁신',
+                title: '워프 링크',
+                img: 'https://fmbge14b5pze8zo7.public.blob.vercel-storage.com/thumbnails/%EC%9B%8C%ED%94%84%EB%A7%81%ED%81%AC.png',
+                desc: '두 개의 링이 눈앞에서 서로를 통과하는 순간이동 마술. WARP LINK는 기존 링 마술의 한계를 완전히 재정의한 렉처 시리즈입니다. 어떤 각도에서도 완벽하게 보이는 앵글-프루프 기법을 담아냈습니다.',
+                specs: [
+                    { label: '형식', value: '온라인 렉처 영상 (HD)' },
+                    { label: '영상 시간', value: '약 85분 (루틴 3가지)' },
+                    { label: '언어', value: '한국어 (영어 자막 포함)' },
+                    { label: '필요 도구', value: '일반 점핑 링 (별도 구매 가능)' },
+                    { label: '접근 방법', value: '구매 후 영구 시청 링크 제공' },
+                ]
+            },
+            shift: {
+                tag: '마술 도구',
+                badge: 'SIGNATURE',
+                eyebrow: '관객의 카드가 원하는 곳에서 나오는',
+                title: '시프트',
+                img: 'https://fmbge14b5pze8zo7.public.blob.vercel-storage.com/thumbnails/%EC%8B%9C%ED%94%84%ED%8A%B8.png',
+                desc: '관객이 마음속으로 생각한 숫자의 카드를 정확히 찾아내는 PARADIME 시그니처 도구. 연습 카드 시스템이 내장되어 있어 무대 위에서도 실수 없이 완벽한 연출이 가능합니다. 오직 PARADIME에서만 만날 수 있는 독점 기믹입니다.',
+                specs: [
+                    { label: '난이도', value: '입문 ~ 초급' },
+                    { label: '구성', value: '기믹 카드 덱 1세트 + 설명서' },
+                    { label: '리셋', value: '즉시 (자동 리셋 구조)' },
+                    { label: '수행 인원', value: '1인 수행 가능' },
+                    { label: '독점 여부', value: 'PARADIME 단독 판매' },
+                ]
+            }
+        };
+
+        
+        const modal = document.getElementById('productModal');
+        const modalBackdrop = modal.querySelector('.modal-backdrop');
+        const modalClose = modal.querySelector('.modal-close');
+        const modalCta = modal.querySelector('.modal-cta-primary');
+
+        function openModal(key) {
+            const p = products[key];
+            if (!p) return;
+
+            document.getElementById('modalTag').textContent = p.tag;
+            document.getElementById('modalBadge').textContent = p.badge;
+            document.getElementById('modalEyebrow').textContent = p.eyebrow;
+            document.getElementById('modalTitle').textContent = p.title;
+            document.getElementById('modalDesc').textContent = p.desc;
+
+            const img = document.getElementById('modalImg');
+            img.src = p.img;
+            img.alt = p.title;
+
+            const specsList = document.getElementById('modalSpecs');
+            specsList.innerHTML = p.specs.map(s =>
+                `<li><span class="spec-label">${s.label}</span><span class="spec-value">${s.value}</span></li>`
+            ).join('');
+
+            modal.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+
+            
+            modalCta.onclick = () => closeModal();
+        }
+
+        function closeModal() {
+            modal.classList.remove('is-open');
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.portfolio-card').forEach(card => {
+            card.addEventListener('click', () => openModal(card.dataset.product));
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openModal(card.dataset.product);
+                }
+            });
+        });
+
+        modalClose.addEventListener('click', closeModal);
+        modalBackdrop.addEventListener('click', closeModal);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+        });
+    </script>
+</body>
 </html>
